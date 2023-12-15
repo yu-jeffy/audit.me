@@ -10,7 +10,9 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from operator import itemgetter
-from doc_db import db
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Pinecone
+import pinecone
 
 load_dotenv()
 
@@ -18,6 +20,20 @@ load_dotenv()
 #  create llm
 ################################################
 llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
+
+
+################################################
+#  vectore store
+################################################
+# initialize pinecone
+pinecone.init(
+    api_key=os.getenv("PINECONE_API_KEY"),  # find at app.pinecone.io
+    environment=os.getenv("PINECONE_ENV"),  # next to api key in console
+)
+
+embeddings = OpenAIEmbeddings()
+
+pinecone_store = Pinecone.from_existing_index("auditme", embeddings)
 
 ################################################
 #  langchain pipeline
@@ -49,7 +65,7 @@ ANSWER_PROMPT = ChatPromptTemplate.from_template(template)
 DEFAULT_DOCUMENT_PROMPT = PromptTemplate.from_template(template="{page_content}")
 
 # Create a retriever from the Chroma database, to be used for retrieving relevant documents.
-retriever = db.as_retriever()
+# retriever = db.as_retriever()
 
 # Define a function that combines multiple documents into a single string.
 def _combine_documents(docs, document_prompt=DEFAULT_DOCUMENT_PROMPT, document_separator="\n\n"):
@@ -69,14 +85,13 @@ _inputs = RunnableParallel(
 # Define the context using the standalone question from the previous processing step,
 # retrieve documents based on that context/question, and combine them.
 _context = {
-    "context": itemgetter("user_question") | retriever | _combine_documents,
+    "context": itemgetter("user_question") | pinecone_store.similarity_search() | _combine_documents,
     "question": lambda x: x["user_question"],
 }
 
 # Combine the inputs and context to form the conversational QA chain.
 # This will use the rephrased question to retrieve documents, provide context, and generate an answer.
 conversational_qa_chain = _inputs | _context | ANSWER_PROMPT | ChatOpenAI()
-
 
 ################################################
 #  prompt the pipeline

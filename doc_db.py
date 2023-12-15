@@ -10,9 +10,11 @@ from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
+from langchain.vectorstores import Pinecone
 from langchain.document_loaders import JSONLoader
 
 # other imports
+import pinecone
 import os
 from dotenv import load_dotenv
 import json
@@ -65,21 +67,44 @@ for doc_index, doc in enumerate(docs):
     split_docs = text_splitter.split_text(sol_code)
 
     for chunk in split_docs:
-        doc_chunks.append(Document(page_content=chunk, metadata={}))
+        doc_chunks.append(chunk)
+        #doc_chunks.append(Document(page_content=chunk, metadata={}))
 
 print(f"Number of documents after splitting: {len(doc_chunks)}")
 
 ################################################
 #  create embeddings
 ################################################
-# embedding function
-# embeddings_model = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002")
+print("Creating embeddings...")
 
-# embeddings = embeddings_model.embed_documents(sol_docs)
+# embedding function
+embeddings_model = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002")
+
+embeddings = embeddings_model.embed_documents(doc_chunks)
 
 ################################################
 #  create vector db (embeddings performed by function)
 ################################################
 print("Creating vector database...")
-db = Chroma.from_documents(doc_chunks, OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002"))
+
+# initialize pinecone
+pinecone.init(
+    api_key=os.getenv("PINECONE_API_KEY"),  # find at app.pinecone.io
+    environment=os.getenv("PINECONE_ENV"),  # next to api key in console
+)
+
+index_name = "auditme"
+
+# First, check if our index already exists. If it doesn't, we create it
+if index_name not in pinecone.list_indexes():
+    # we create a new index
+    pinecone.create_index(name=index_name, metric="cosine", dimension=1536)
+# The OpenAI embedding model `text-embedding-ada-002 uses 1536 dimensions`
+docsearch = Pinecone.from_documents(embeddings, embeddings_model, index_name=index_name)
+
+# if you already have an index, you can load it like this
+# docsearch = Pinecone.from_existing_index(index_name, embeddings)
+
+# Create chromadb vector store
+# db = Chroma.from_documents(doc_chunks, OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002"))
 
