@@ -14,11 +14,14 @@ from doc_db import db
 
 load_dotenv()
 
-client = OpenAI()
-client.api_key = os.getenv("OPENAI_API_KEY")
-
+################################################
+#  create llm
+################################################
 llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
+################################################
+#  langchain pipeline
+################################################
 # Define a template string for the prompt that will be used to rephrase a question.
 _template = """
 Chat History:
@@ -29,12 +32,14 @@ CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 # Define another template string for a prompt that will provide context and ask a question.
 template = """You are a Smart Contract auditor. 
-You have been provided the following CONTEXT, taken from a vector search of known smart contract vulnerabilities based on the USER QUESTION. 
-Do not provide nor reference the CONTEXT in your response, only use it for reasoning.
+You have been provided the following RELEVANT_CODE, results from a vector search of known smart contract vulnerabilities based on the code in the USER QUESTION. 
+Do not provide nor reference the RELEVANT_CODE in your response, only use it for helping identify vulnerabilities in USER QUESTION.
 
 Answer the USER QUESTION, identifying any vulnerabilities, and a possible fixex. Provide code excerpts where possible.
 
-CONTEXT: {context}
+ONLY indentify vulnerabilities in the USER QUESTION, not the RELEVANT_CODE.
+
+RELEVANT_CODE: {context}
 
 USER QUESTION: {question}
 """
@@ -72,6 +77,10 @@ _context = {
 # This will use the rephrased question to retrieve documents, provide context, and generate an answer.
 conversational_qa_chain = _inputs | _context | ANSWER_PROMPT | ChatOpenAI()
 
+
+################################################
+#  prompt the pipeline
+################################################
 # Invoke the conversational QA chain with an initial question and an empty chat history.
 # This will process the question, search for relevant context, and attempt to provide an answer.
 print(conversational_qa_chain.invoke(
