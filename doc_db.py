@@ -53,7 +53,7 @@ print(f"Number of total documents loaded: {len(docs)}")
 #  split documents into chunks
 ################################################
 text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
-    chunk_size=128, chunk_overlap=0
+    chunk_size=256, chunk_overlap=0
 )
 
 doc_chunks = []
@@ -80,5 +80,6 @@ print(f"Number of documents after splitting: {len(doc_chunks)}")
 ################################################
 #  create vector db (embeddings performed by function)
 ################################################
+print("Creating vector database...")
 db = Chroma.from_documents(doc_chunks, OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002"))
 

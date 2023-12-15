@@ -83,6 +83,7 @@ conversational_qa_chain = _inputs | _context | ANSWER_PROMPT | ChatOpenAI()
 ################################################
 # Invoke the conversational QA chain with an initial question and an empty chat history.
 # This will process the question, search for relevant context, and attempt to provide an answer.
+print("testing prompt...")
 print(conversational_qa_chain.invoke(
     {
         "question": """Check for vulnerabilties in this smart contract:
