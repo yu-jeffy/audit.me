@@ -1,5 +1,10 @@
 from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import CharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 loader = DirectoryLoader('contracts', glob="**/*.sol", show_progress=True) #silent_errors=True
 
@@ -25,3 +30,8 @@ for doc_index, doc in enumerate(docs):
 print(f"Number of documents after splitting: {len(sol_docs)}")
 # for split_doc in sol_docs:
 #    print(split_doc)
+
+embeddings_model = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002")
+
+embeddings = embeddings_model.embed_documents(sol_docs)
+print(len(embeddings), len(embeddings[0]))
