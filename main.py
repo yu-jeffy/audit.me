@@ -20,23 +20,23 @@ client.api_key = os.getenv("OPENAI_API_KEY")
 llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 # Define a template string for the prompt that will be used to rephrase a question.
-_template = """Given the following conversation and a follow up question, process the follow up into this format:
-
+_template = """
 Chat History:
 {chat_history}
-Follow Up Input: {question}
-Standalone question:"""
+User Input: {question}"""
 
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 # Define another template string for a prompt that will provide context and ask a question.
-template = """You are a RAG assisted Smart Contract auditor. 
-Answer the User Question provided the following context, taken from a vector database of known smart contract vulnerabilities. 
-Do not provide the context in your response, only use it for reasoning.
-Provide code excerpts in your response identifying the problem, and a possible fix, where possible.
-Context: {context}
+template = """You are a Smart Contract auditor. 
+You have been provided the following CONTEXT, taken from a vector search of known smart contract vulnerabilities based on the USER QUESTION. 
+Do not provide nor reference the CONTEXT in your response, only use it for reasoning.
 
-User Question: {question}
+Answer the USER QUESTION, identifying any vulnerabilities, and a possible fixex. Provide code excerpts where possible.
+
+CONTEXT: {context}
+
+USER QUESTION: {question}
 """
 ANSWER_PROMPT = ChatPromptTemplate.from_template(template)
 
@@ -51,9 +51,9 @@ def _combine_documents(docs, document_prompt=DEFAULT_DOCUMENT_PROMPT, document_s
     doc_strings = [format_document(doc, document_prompt) for doc in docs]
     return document_separator.join(doc_strings)
 
-# Set up a parallel runnable to process the standalone question rephrasing task.
+# Set up a parallel runnable to process the standalone question formatting task.
 _inputs = RunnableParallel(
-    standalone_question=RunnablePassthrough.assign(
+    user_question=RunnablePassthrough.assign(
         chat_history=lambda x: get_buffer_string(x["chat_history"])
     )
     | CONDENSE_QUESTION_PROMPT
@@ -64,8 +64,8 @@ _inputs = RunnableParallel(
 # Define the context using the standalone question from the previous processing step,
 # retrieve documents based on that context/question, and combine them.
 _context = {
-    "context": itemgetter("standalone_question") | retriever | _combine_documents,
-    "question": lambda x: x["standalone_question"],
+    "context": itemgetter("user_question") | retriever | _combine_documents,
+    "question": lambda x: x["user_question"],
 }
 
 # Combine the inputs and context to form the conversational QA chain.
