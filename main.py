@@ -30,7 +30,7 @@ Standalone question:"""
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 # Define another template string for a prompt that will provide context and ask a question.
-template = """Answer the prompt given the following context, taken from a database of known vulnerabilities. Provide code excerpts where possible:
+template = """Answer the prompt given the following context, taken from a database of known vulnerabilities. Provide code excerpts in your response identifying the problem, and a possible fix, where possible:
 {context}
 
 Question: {question}
