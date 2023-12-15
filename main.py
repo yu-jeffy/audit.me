@@ -10,8 +10,7 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from operator import itemgetter
-from documents import db
-
+from doc_db import db
 
 load_dotenv()
 
@@ -22,7 +21,7 @@ llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 # Define a template string for the prompt that will be used to rephrase a question.
 _template = """Given the following conversation and a follow up question, 
-rephrase the follow up question to be a standalone question, in its original language.
+rephrase the follow up question to be a standalone question.
 
 Chat History:
 {chat_history}
