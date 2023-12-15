@@ -4,3 +4,6 @@ python-dotenv
 unstructured
 tqdm
 tiktoken
+chromadb
+pysqlite3
+pysqlite3-binary
