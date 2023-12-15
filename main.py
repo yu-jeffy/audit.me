@@ -30,10 +30,13 @@ Standalone question:"""
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 # Define another template string for a prompt that will provide context and ask a question.
-template = """Answer the prompt given the following context, taken from a database of known vulnerabilities. Provide code excerpts in your response identifying the problem, and a possible fix, where possible:
-{context}
+template = """You are a RAG assisted Smart Contract auditor. 
+Answer the User Question provided the following context, taken from a vector database of known smart contract vulnerabilities. 
+Do not provide the context in your response, only use it for reasoning.
+Provide code excerpts in your response identifying the problem, and a possible fix, where possible.
+Context: {context}
 
-Question: {question}
+User Question: {question}
 """
 ANSWER_PROMPT = ChatPromptTemplate.from_template(template)
 
