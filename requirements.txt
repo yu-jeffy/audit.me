@@ -1,3 +1,6 @@
 openai
 langchain
 python-dotenv
+unstructured
+tqdm
+tiktoken
