@@ -58,7 +58,7 @@ The results are below:
 
 RELEVANT_VULNERNABILITY: {context}
 
-With this knowledge, answer the USER QUESTION, identifying any vulnerabilities line by line, and a possible fixes. Provide code excerpts where possible.
+With this knowledge, answer the USER QUESTION, identifying ALL vulnerabilities line by line, and a possible fixes. Provide code excerpts where possible.
 ONLY indentify vulnerabilities in the USER QUESTION, do not analyze the RELEVANT_VULNERNABILITY.
 
 USER QUESTION: {question}
@@ -82,7 +82,7 @@ _inputs = RunnableParallel(
         chat_history=lambda x: get_buffer_string(x["chat_history"])
     )
     | CONDENSE_QUESTION_PROMPT
-    | ChatOpenAI(temperature=0.3, max_tokens=4096)
+    | ChatOpenAI(temperature=0.3, max_tokens=2048)
     | StrOutputParser(),
 )
 
