@@ -7,11 +7,11 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 # langchain imports
 from langchain.docstore.document import Document
 from langchain.document_loaders import DirectoryLoader
-from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.vectorstores import Pinecone
 from langchain.document_loaders import JSONLoader
+from langchain.text_splitter import TokenTextSplitter
 
 # other imports
 import pinecone
@@ -54,9 +54,8 @@ print(f"Number of total documents loaded: {len(docs)}")
 ################################################
 #  split documents into chunks
 ################################################
-text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
-    chunk_size=256, chunk_overlap=0
-)
+
+text_splitter = TokenTextSplitter(chunk_size=1024, chunk_overlap=0)
 
 doc_chunks = []
 
@@ -67,8 +66,8 @@ for doc_index, doc in enumerate(docs):
     split_docs = text_splitter.split_text(sol_code)
 
     for chunk in split_docs:
-        doc_chunks.append(chunk)
-        #doc_chunks.append(Document(page_content=chunk, metadata={}))
+        #doc_chunks.append(chunk)
+        doc_chunks.append(Document(page_content=chunk, metadata={}))
 
 print(f"Number of documents after splitting: {len(doc_chunks)}")
 
@@ -80,12 +79,12 @@ print("Creating embeddings...")
 # embedding function
 embeddings_model = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-ada-002")
 
-embeddings = embeddings_model.embed_documents(doc_chunks)
+# embeddings = embeddings_model.embed_documents(doc_chunks)
 
 ################################################
 #  create vector db (embeddings performed by function)
 ################################################
-print("Creating vector database...")
+print("Initiating vector database...")
 
 # initialize pinecone
 pinecone.init(
@@ -100,7 +99,7 @@ if index_name not in pinecone.list_indexes():
     # we create a new index
     pinecone.create_index(name=index_name, metric="cosine", dimension=1536)
 # The OpenAI embedding model `text-embedding-ada-002 uses 1536 dimensions`
-docsearch = Pinecone.from_documents(embeddings, embeddings_model, index_name=index_name)
+docsearch = Pinecone.from_documents(doc_chunks, embeddings_model, index_name=index_name)
 
 # if you already have an index, you can load it like this
 # docsearch = Pinecone.from_existing_index(index_name, embeddings)

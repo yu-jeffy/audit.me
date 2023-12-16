@@ -48,14 +48,14 @@ CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 # Define another template string for a prompt that will provide context and ask a question.
 template = """You are a Smart Contract auditor. 
-You have been provided the following RELEVANT_CODE, results from a vector search of known smart contract vulnerabilities based on the code in the USER QUESTION. 
-Do not provide nor reference the RELEVANT_CODE in your response, only use it for helping identify vulnerabilities in USER QUESTION.
+You have been provided the following RELEVANT_VULNERNABILITY, the result from a vector search of known smart contract vulnerabilities based on the code in the USER QUESTION. 
+Do not analyze the RELEVANT_VULNERNABILITY itself, only use it for helping identify vulnerabilities in USER QUESTION.
 
 Answer the USER QUESTION, identifying any vulnerabilities, and a possible fixex. Provide code excerpts where possible.
 
-ONLY indentify vulnerabilities in the USER QUESTION, not the RELEVANT_CODE.
+ONLY indentify vulnerabilities in the USER QUESTION, not the RELEVANT_VULNERNABILITY.
 
-RELEVANT_CODE: {context}
+RELEVANT_VULNERNABILITY: {context}
 
 USER QUESTION: {question}
 """
