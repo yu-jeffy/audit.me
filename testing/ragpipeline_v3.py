@@ -24,7 +24,7 @@ llm = ChatOpenAI(temperature=0.7, model_name="gpt-4-1106-preview", max_tokens=5)
 pinecone.init(api_key=os.getenv("PINECONE_API_KEY"), environment=os.getenv("PINECONE_ENV"))
 embeddings = OpenAIEmbeddings()
 pinecone_index = Pinecone.from_existing_index('auditme', embeddings)
-retriever = pinecone_index.as_retriever()
+retriever = pinecone_index.as_retriever(search_kwargs={"k": 5})
 
 # Define the prompt template
 template = """
@@ -57,8 +57,8 @@ if not os.path.exists(results_dir):
 # Process each entry in the 52samplesourcecode.jsonl
 with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
     for contract_id, line in enumerate(jsonl_input, start=1):
-        # Skip to contract_id 26
-        if contract_id < 26:
+        # Skip to contract_id 29
+        if contract_id < 30:
             continue
         entry = json.loads(line)
         address = entry['address']
@@ -106,6 +106,6 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
                 jsonl_output.write(json.dumps(result) + '\n')
                 jsonl_output.flush()
                 print(f"Contract {contract_id} - {address}, run {i+1} of 38 result: {result}")
-                time.sleep(10)
+                time.sleep(2)
 
 print("Completed.")
