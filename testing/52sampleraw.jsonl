@@ -1,0 +1,52 @@
+{"address":"1659","attacktype":"Reentrancy, Token standard incompatibility"}
+{"address":"3830","attacktype":"On-chain oracle manipulation, Absence of code logic or sanity check"}
+{"address":"9D2B","attacktype":"Governance attack"}
+{"address":"743D","attacktype":"On-chain oracle manipulation"}
+{"address":"1fD6","attacktype":"Absence of code logic or sanity check"}
+{"address":"5286","attacktype":"On-chain oracle manipulation"}
+{"address":"c6Ca","attacktype":"Visibility errors, including unrestricted action"}
+{"address":"8923","attacktype":"Token standard incompatibility, Reentrancy"}
+{"address":"deE4","attacktype":"Unfair slippage protection, Absence of code logic or sanity check"}
+{"address":"de43","attacktype":"Flash liquidity borrow, purchase, mint or deposit"}
+{"address":"Db15","attacktype":"On-chain oracle manipulation, Frontrunning"}
+{"address":"Ca5f","attacktype":"Deployment mistake, Other unsafe DeFi protocol dependency"}
+{"address":"3a5f","attacktype":"Visibility errors, including unrestricted action"}
+{"address":"24C5","attacktype":"Governance attack"}
+{"address":"4D61","attacktype":"Token standard incompatibility"}
+{"address":"8aF0","attacktype":"On-chain oracle manipulation"}
+{"address":"8a27","attacktype":"Other fake contracts, Deployment mistake, Arithmetic mistakes"}
+{"address":"E5f0","attacktype":"Absence of code logic or sanity check"}
+{"address":"Bfe2","attacktype":"Absence of code logic or sanity check"}
+{"address":"AeD5","attacktype":"Other coding mistakes"}
+{"address":"9c7A","attacktype":"Other unsafe DeFi protocol dependency, Absence of code logic or sanity check"}
+{"address":"F2f9","attacktype":"Other unsafe DeFi protocol dependency, Inconsistent access control"}
+{"address":"3682","attacktype":"Other unsafe DeFi protocol dependency"}
+{"address":"1d8b","attacktype":"Visibility errors, including unrestricted action"}
+{"address":"5210","attacktype":"Absence of code logic or sanity check, Other unsafe DeFi protocol dependency"}
+{"address":"a64F","attacktype":"Other unsafe DeFi protocol dependency"}
+{"address":"7810","attacktype":"Flash liquidity borrow, purchase, mint or deposit, Absence of code logic or sanity check"}
+{"address":"eE63","attacktype":"Absence of code logic or sanity check"}
+{"address":"3830","attacktype":"On-chain oracle manipulation, Absence of code logic or sanity check"}
+{"address":"1101","attacktype":"On-chain oracle manipulation"}
+{"address":"14ef","attacktype":"Reentrancy, Visibility errors, including unrestricted action, Delegatecall injection"}
+{"address":"F5ea","attacktype":"Token standard incompatibility, Reentrancy"}
+{"address":"8b17","attacktype":"Absence of code logic or sanity check"}
+{"address":"c8cF","attacktype":"On-chain oracle manipulation"}
+{"address":"B755","attacktype":"On-chain oracle manipulation"}
+{"address":"e747","attacktype":"Flash liquidity borrow, purchase, mint or deposit"}
+{"address":"1522","attacktype":"Unsafe call to phantom function, Absence of code logic or sanity check"}
+{"address":"7eF5","attacktype":"Direct call to untrusted contract, Insider trade or other activities"}
+{"address":"49d6","attacktype":"Delegatecall injection, Absence of code logic or sanity check"}
+{"address":"E758","attacktype":"Governance attack"}
+{"address":"4A30","attacktype":"Locked or frozen tokens"}
+{"address":"8962","attacktype":"Absence of code logic or sanity check"}
+{"address":"2004","attacktype":"Reentrancy"}
+{"address":"1Dc8","attacktype":"Visibility errors, including unrestricted action"}
+{"address":"5424","attacktype":"Reentrancy, Flash liquidity borrow, purchase, mint or deposit"}
+{"address":"81bC","attacktype":"Other unfair or unsafe DeFi protocol interaction, Absence of code logic or sanity check"}
+{"address":"9b25","attacktype":"Absence of code logic or sanity check"}
+{"address":"1ec7","attacktype":"Absence of code logic or sanity check"}
+{"address":"58E6","attacktype":"Absence of code logic or sanity check"}
+{"address":"1c0b","attacktype":"Absence of code logic or sanity check, Fake tokens"}
+{"address":"df50","attacktype":"Unfair slippage protection"}
+{"address":"F952","attacktype":"Flash liquidity borrow, purchase, mint or deposit, Unfair liquidity providing"}
