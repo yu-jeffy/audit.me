@@ -60,7 +60,7 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
         address = entry['address']
         source_code = entry['sourcecode']
         attack_types = entry['attacktype'].split(', ')
-        print(f"analyzing contract {line} - {address}...")
+        print(f"analyzing contract {contract_id} - {address}...")
         
         # Filename for the contract's results
         result_filename = f"{contract_id} - {address}.jsonl"
@@ -69,7 +69,7 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
         # Open the result file for this contract
         with open(result_filepath, 'a') as jsonl_output:
             for i in range(38):  # Run each contract 38 times
-                print(f"contract {line} - {address}, run {i+1} of 38...")
+                print(f"contract {contract_id} - {address}, run {i+1} of 38...")
                 results = []
                 # Retrieve relevant documents
                 docs = retriever.get_relevant_documents(source_code)
@@ -88,7 +88,7 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
                     
                     # Run the prompt through the LLM
                     chain = load_qa_chain(llm, chain_type="stuff", prompt=QA_CHAIN_PROMPT)
-                    output = chain({"input_documents": docs, "question": source_code}, return_only_outputs=True)
+                    output = chain({"input_documents": docs, "question": source_code, "vulnerability_type": attack_type, "vulnerability_description": vulnerability_description}, return_only_outputs=True)
                     
                     # Append the result to the entry
                     results.append({
@@ -100,6 +100,6 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
                 # Write the updated entry to the output file
                 for result in results:
                     jsonl_output.write(json.dumps(result) + '\n')
-                    print(f"contract {line} - {address}, run {i+1} of 38 result: {result}")
+                    print(f"contract {contract_id} - {address}, run {i+1} of 38 result: {result}")
 
 print("Completed.")
