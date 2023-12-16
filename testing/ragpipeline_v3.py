@@ -7,6 +7,7 @@ from langchain.vectorstores import Pinecone
 from langchain.prompts import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
+import time
 
 # Load environment variables
 load_dotenv()
@@ -56,6 +57,9 @@ if not os.path.exists(results_dir):
 # Process each entry in the 52samplesourcecode.jsonl
 with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
     for contract_id, line in enumerate(jsonl_input, start=1):
+        # Skip to contract_id 26
+        if contract_id < 26:
+            continue
         entry = json.loads(line)
         address = entry['address']
         source_code = entry['sourcecode']
@@ -102,5 +106,6 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
                 jsonl_output.write(json.dumps(result) + '\n')
                 jsonl_output.flush()
                 print(f"Contract {contract_id} - {address}, run {i+1} of 38 result: {result}")
+                time.sleep(10)
 
 print("Completed.")
