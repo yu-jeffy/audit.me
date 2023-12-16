@@ -60,14 +60,16 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
         address = entry['address']
         source_code = entry['sourcecode']
         attack_types = entry['attacktype'].split(', ')
+        print(f"analyzing contract {address}...")
         
         # Filename for the contract's results
         result_filename = f"{contract_id} - {address}.jsonl"
         result_filepath = os.path.join(results_dir, result_filename)
         
         # Open the result file for this contract
-        with open(result_filepath, 'w') as jsonl_output:
-            for _ in range(38):  # Run each contract 38 times
+        with open(result_filepath, 'a') as jsonl_output:
+            for i in range(38):  # Run each contract 38 times
+                print(f"Run {i+1} of 38 for contract {address}...")
                 results = []
                 # Retrieve relevant documents
                 docs = retriever.get_relevant_documents(source_code)
@@ -98,6 +100,6 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
                 # Write the updated entry to the output file
                 for result in results:
                     jsonl_output.write(json.dumps(result) + '\n')
-                    print(result)
+                    print(f"Run {i+1} of 38 for contract {address} result: {result}")
 
-print("Completed processing and saved results to the 52results directory")
+print("Completed.")
