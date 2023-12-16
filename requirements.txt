@@ -9,3 +9,5 @@ pysqlite3
 pysqlite3-binary
 jq
 pinecone-client
+requests
+web3
