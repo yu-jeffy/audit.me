@@ -53,4 +53,4 @@ with open('52samplefull.jsonl', 'r') as jsonl_input, open('52samplesourcecode.js
         # Wait for 1 second before making the next API call
         time.sleep(1)
 
-print("Completed fetching source codes in 52samplesourcecode.jsonl")
+print("Completed fetching source codes")
