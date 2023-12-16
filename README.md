@@ -3,6 +3,10 @@
 
 This project is currently under development. The RAG system is done. Testing is now underway for efficacy.
 
+A comparative study will be conducted using the same methodology from [this study](https://arxiv.org/abs/2306.12338). The 52 smart contracts in their testing set will be run against the RAG system with the same GPT-4 parameters, and results will be compared.
+
+Further testing will be conducted against the dataset from this [Systemization of Knowledge paper](https://arxiv.org/abs/2208.13035), which was the original dataset the 52 examples were sampled from.
+
 ### Technical Details
 
 The `doc_db.py` file processes a collection of 430 vulnerable Solidity smart contract examples. It extracts meaningful features from these contracts and uses them to create a Pinecone vector store. This vector store serves as a high-dimensional space where each point represents a unique contract, and the proximity between points corresponds to the similarity between the contracts they represent.
