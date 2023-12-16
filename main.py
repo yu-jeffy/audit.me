@@ -122,7 +122,8 @@ print(conversational_qa_chain.invoke(
                         balances[msg.sender] -= _weiToWithdraw;
                     }
                 }
-            }""",
+            }
+            """,
         "chat_history": [],
     }
 ).content)
