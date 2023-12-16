@@ -89,7 +89,7 @@ with open('52samplesourcecode.jsonl', 'r') as jsonl_input:
                     
                 # Run the prompt through the LLM
                 chain = load_qa_chain(llm, chain_type="stuff", prompt=QA_CHAIN_PROMPT)
-                output = chain({"input_documents": docs, "question": source_code, "vulnerability_type": attack_type, "vulnerability_description": vulnerability_description}, return_only_outputs=True)
+                output = chain({"input_documents": docs, "question": source_code, "vulnerability_type": concatenated_attack_types, "vulnerability_description": concatenated_descriptions}, return_only_outputs=True)
                     
                 # Result entry
                 result = {
