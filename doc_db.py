@@ -36,20 +36,20 @@ sol_docs = loader.load()
 print(f"Number of Solidity contracts loaded: {len(sol_docs)}")
 
 # load json files
-json_loader = JSONLoader(
-    file_path='contracts/vulns.jsonl',
-    jq_schema='.body',
-    text_content=False,
-    json_lines=True)
+# json_loader = JSONLoader(
+#    file_path='contracts/vulns.jsonl',
+#    jq_schema='.body',
+#    text_content=False,
+#    json_lines=True)
 
-json_docs = json_loader.load()
+# json_docs = json_loader.load()
 
 # full array of all documents
-sol_docs.extend(json_docs)
+# sol_docs.extend(json_docs)
 
 docs = sol_docs
 
-print(f"Number of total documents loaded: {len(docs)}")
+# print(f"Number of total documents loaded: {len(docs)}")
 
 ################################################
 #  split documents into chunks
