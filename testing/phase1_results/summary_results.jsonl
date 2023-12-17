@@ -1,0 +1,52 @@
+{"contract_id": 1, "address": "0xe952bda8c06481506e4731c4f54ced2d4ab81659", "attacktype": "Reentrancy, Token standard incompatibility", "yescount": 31, "nocount": 9, "successrate": 0.775}
+{"contract_id": 10, "address": "0x32e574b0400cdb93dc33a34a30986737186bde43", "attacktype": "Flash liquidity borrow, purchase, mint or deposit", "yescount": 10, "nocount": 30, "successrate": 0.25}
+{"contract_id": 11, "address": "0x39b1df026010b5aea781f90542ee19e900f2db15", "attacktype": "On-chain oracle manipulation, Frontrunning", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 12, "address": "0x17e8ca1b4798b97602895f63206afcd1fc90ca5f", "attacktype": "Deployment mistake, Other unsafe DeFi protocol dependency", "yescount": 0, "nocount": 40, "successrate": 0.0}
+{"contract_id": 13, "address": "0x923cab01e6a4639664aa64b76396eec0ea7d3a5f", "attacktype": "Visibility errors, including unrestricted action", "yescount": 30, "nocount": 10, "successrate": 0.75}
+{"contract_id": 14, "address": "0xc1e088fc1323b20bcbee9bd1b9fc9546db5624c5", "attacktype": "Governance attack", "yescount": 26, "nocount": 14, "successrate": 0.65}
+{"contract_id": 15, "address": "0x88093840aad42d2621e1a452bf5d7076ff804d61", "attacktype": "Token standard incompatibility", "yescount": 6, "nocount": 34, "successrate": 0.15}
+{"contract_id": 16, "address": "0x3ec4a6cfe803ee84009ce6e1ecf419c9cb1e8af0", "attacktype": "On-chain oracle manipulation", "yescount": 1, "nocount": 39, "successrate": 0.025}
+{"contract_id": 17, "address": "0x33bf0bb8e1405dc440eccb97ffd92fef438c8a27", "attacktype": "Other fake contracts, Deployment mistake, Arithmetic mistakes", "yescount": 24, "nocount": 16, "successrate": 0.6}
+{"contract_id": 18, "address": "0x25a5feb5ac6533fe3c4e8e8e2a55f9e1f1f8e5f0", "attacktype": "Absence of code logic or sanity check", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 19, "address": "0x951d51baefb72319d9fbe941e1615938d89abfe2", "attacktype": "Absence of code logic or sanity check", "yescount": 38, "nocount": 2, "successrate": 0.95}
+{"contract_id": 2, "address": "0x55dbb68f69337fcabe261f296b50b4723d333830", "attacktype": "On-chain oracle manipulation, Absence of code logic or sanity check", "yescount": 39, "nocount": 1, "successrate": 0.975}
+{"contract_id": 20, "address": "0xe0b94a7bb45dd905c79bb1992c9879f40f1caed5", "attacktype": "Other coding mistakes", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 21, "address": "0x67b66c99d3eb37fa76aa3ed1ff33e8e39f0b9c7a", "attacktype": "Other unsafe DeFi protocol dependency, Absence of code logic or sanity check", "yescount": 22, "nocount": 18, "successrate": 0.55}
+{"contract_id": 22, "address": "0x9daec8d56cdcbde72abe65f4a5daf8cc0a5bf2f9", "attacktype": "Other unsafe DeFi protocol dependency, Inconsistent access control", "yescount": 28, "nocount": 12, "successrate": 0.7}
+{"contract_id": 23, "address": "0x0e511aa1a137aad267dfe3a6bfca0b856c1a3682", "attacktype": "Other unsafe DeFi protocol dependency", "yescount": 6, "nocount": 34, "successrate": 0.15}
+{"contract_id": 24, "address": "0x75572098dc462f976127f59f8c97dfa291f81d8b", "attacktype": "Visibility errors, including unrestricted action", "yescount": 33, "nocount": 7, "successrate": 0.825}
+{"contract_id": 25, "address": "0x6847259b2b3a4c17e7c43c54409810af48ba5210", "attacktype": "Absence of code logic or sanity check, Other unsafe DeFi protocol dependency", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 26, "address": "0x6684977bbed67e101bb80fc07fccfba655c0a64f", "attacktype": "Other unsafe DeFi protocol dependency", "yescount": 6, "nocount": 34, "successrate": 0.15}
+{"contract_id": 27, "address": "0x35c674c288577df3e9b5dafef945795b741c7810", "attacktype": "Flash liquidity borrow, purchase, mint or deposit, Absence of code logic or sanity check", "yescount": 23, "nocount": 15, "successrate": 0.6052631578947368}
+{"contract_id": 28, "address": "0x66e7d7839333f502df355f5bd87aea24bac2ee63", "attacktype": "Absence of code logic or sanity check", "yescount": 39, "nocount": 1, "successrate": 0.975}
+{"contract_id": 29, "address": "0x55dbb68f69337fcabe261f296b50b4723d333830", "attacktype": "On-chain oracle manipulation, Absence of code logic or sanity check", "yescount": 35, "nocount": 5, "successrate": 0.875}
+{"contract_id": 3, "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b", "attacktype": "Governance attack", "yescount": 10, "nocount": 30, "successrate": 0.25}
+{"contract_id": 30, "address": "0xddd7df28b1fb668b77860b473af819b03db61101", "attacktype": "On-chain oracle manipulation", "yescount": 33, "nocount": 7, "successrate": 0.825}
+{"contract_id": 31, "address": "0xc9f27a50f82571c1c8423a42970613b8dbda14ef", "attacktype": "Reentrancy, Visibility errors, including unrestricted action, Delegatecall injection", "yescount": 28, "nocount": 12, "successrate": 0.7}
+{"contract_id": 32, "address": "0x0eee3e3828a45f7601d5f54bf49bb01d1a9df5ea", "attacktype": "Token standard incompatibility, Reentrancy", "yescount": 5, "nocount": 35, "successrate": 0.125}
+{"contract_id": 33, "address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17", "attacktype": "Absence of code logic or sanity check", "yescount": 38, "nocount": 2, "successrate": 0.95}
+{"contract_id": 34, "address": "0xae465fd39b519602ee28f062037f7b9c41fdc8cf", "attacktype": "On-chain oracle manipulation", "yescount": 2, "nocount": 38, "successrate": 0.05}
+{"contract_id": 35, "address": "0x818e6fecd516ecc3849daf6845e3ec868087b755", "attacktype": "On-chain oracle manipulation", "yescount": 34, "nocount": 6, "successrate": 0.85}
+{"contract_id": 36, "address": "0xacbdb82f07b2653137d3a08a22637121422ae747", "attacktype": "Flash liquidity borrow, purchase, mint or deposit", "yescount": 21, "nocount": 19, "successrate": 0.525}
+{"contract_id": 37, "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522", "attacktype": "Unsafe call to phantom function, Absence of code logic or sanity check", "yescount": 29, "nocount": 11, "successrate": 0.725}
+{"contract_id": 38, "address": "0xa23179be88887804f319c047e88fdd4dd4867ef5", "attacktype": "Direct call to untrusted contract, Insider trade or other activities", "yescount": 7, "nocount": 33, "successrate": 0.175}
+{"contract_id": 39, "address": "0x929cb86046e421abf7e1e02de7836742654d49d6", "attacktype": "Delegatecall injection, Absence of code logic or sanity check", "yescount": 5, "nocount": 35, "successrate": 0.125}
+{"contract_id": 4, "address": "0x833e440332caa07597a5116fbb6163f0e15f743d", "attacktype": "On-chain oracle manipulation", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 40, "address": "0x3157439c84260541003001129c42fb6aba57e758", "attacktype": "Governance attack", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 41, "address": "0x0e6ffd4daeca13a8158146516f847d2f44ad4a30", "attacktype": "Locked or frozen tokens", "yescount": 18, "nocount": 22, "successrate": 0.45}
+{"contract_id": 42, "address": "0x606e9758a39d2d7fa7e70bc68e6e7d9b02948962", "attacktype": "Absence of code logic or sanity check", "yescount": 40, "nocount": 0, "successrate": 1.0}
+{"contract_id": 43, "address": "0x1cec0e358f882733c5ecc028d8a0c24baee02004", "attacktype": "Reentrancy", "yescount": 3, "nocount": 37, "successrate": 0.075}
+{"contract_id": 44, "address": "0x876b9ebd725d1fa0b879fcee12560a6453b51dc8", "attacktype": "Visibility errors, including unrestricted action", "yescount": 33, "nocount": 7, "successrate": 0.825}
+{"contract_id": 45, "address": "0x328d15f6b5eba1c30cde1a5f1f5a9e35b07f5424", "attacktype": "Reentrancy, Flash liquidity borrow, purchase, mint or deposit", "yescount": 27, "nocount": 13, "successrate": 0.675}
+{"contract_id": 46, "address": "0x77f973fcaf871459aa58cd81881ce453759281bc", "attacktype": "Other unfair or unsafe DeFi protocol interaction, Absence of code logic or sanity check", "yescount": 37, "nocount": 3, "successrate": 0.925}
+{"contract_id": 47, "address": "0xde744d544a9d768e96c21b5f087fc54b776e9b25", "attacktype": "Absence of code logic or sanity check", "yescount": 34, "nocount": 6, "successrate": 0.85}
+{"contract_id": 48, "address": "0xdac17f958d2ee523a2206206994597c13d831ec7", "attacktype": "Absence of code logic or sanity check", "yescount": 36, "nocount": 4, "successrate": 0.9}
+{"contract_id": 49, "address": "0xe7f445b93eb9cdabfe76541cc43ff8de930a58e6", "attacktype": "Absence of code logic or sanity check", "yescount": 31, "nocount": 9, "successrate": 0.775}
+{"contract_id": 5, "address": "0x74bcb8b78996f49f46497be185174b2a89191fd6", "attacktype": "Absence of code logic or sanity check", "yescount": 38, "nocount": 2, "successrate": 0.95}
+{"contract_id": 50, "address": "0x0efb384d843a191c02f5c4470d0f9ec0122a1c0b", "attacktype": "Absence of code logic or sanity check, Fake tokens", "yescount": 37, "nocount": 3, "successrate": 0.925}
+{"contract_id": 51, "address": "0xe11fc0b43ab98eb91e9836129d1ee7c3bc95df50", "attacktype": "Unfair slippage protection", "yescount": 21, "nocount": 19, "successrate": 0.525}
+{"contract_id": 52, "address": "0xacd43e627e64355f1861cec6d3a6688b31a6f952", "attacktype": "Flash liquidity borrow, purchase, mint or deposit, Unfair liquidity providing", "yescount": 22, "nocount": 18, "successrate": 0.55}
+{"contract_id": 6, "address": "0x0624eb9691d99178d0d2bd76c72f1dbb4db05286", "attacktype": "On-chain oracle manipulation", "yescount": 30, "nocount": 10, "successrate": 0.75}
+{"contract_id": 7, "address": "0x7b3b69eab43c1aa677df04b4b65f0d169fcdc6ca", "attacktype": "Visibility errors, including unrestricted action", "yescount": 23, "nocount": 17, "successrate": 0.575}
+{"contract_id": 8, "address": "0x3212b29e33587a00fb1c83346f5dbfa69a458923", "attacktype": "Token standard incompatibility, Reentrancy", "yescount": 3, "nocount": 37, "successrate": 0.075}
+{"contract_id": 9, "address": "0x5bd628141c62a901e0a83e630ce5fafa95bbdee4", "attacktype": "Unfair slippage protection, Absence of code logic or sanity check", "yescount": 21, "nocount": 19, "successrate": 0.525}
