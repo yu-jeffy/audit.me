@@ -16,6 +16,8 @@ The RAG system is complete. Testing has been completed.
 
 Phase One returned an overall efficacy of 62.7 across 2080 queries. Many smart contracts scored a complete 40/40 for detection, while others showed mixed results. A few vulnerabilities were 0/40. We believe these weaknesses can be mitigated through enhancement of the dataset in the vectorstore.
 
+Phase Two testing has been completed. The result analysis is currently in progress.
+
 ### Technical Details
 
 The `doc_db.py` file processes a collection of 430 vulnerable Solidity smart contract examples. It extracts meaningful features from these contracts and uses them to create a Pinecone vector store. This vector store serves as a high-dimensional space where each point represents a unique contract, and the proximity between points corresponds to the similarity between the contracts they represent.
