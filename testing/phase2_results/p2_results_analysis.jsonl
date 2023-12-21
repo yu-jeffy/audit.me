@@ -1,0 +1,219 @@
+{"id": "214", "address": "0x14e6d67f824c3a7b4329d3228807f8654294e4bd", "description": "Frontrunning", "YES_count": 5, "NO_count": 35, "percent_success_rate": 12.5}
+{"id": "25", "address": "0x88cc4aa0dd6cf126b00c012dda9f6f4fd9388b17", "description": "Known vulnerability not patched", "YES_count": 15, "NO_count": 25, "percent_success_rate": 37.5}
+{"id": "201", "address": "0xcb6afdc84e8949ddf49ab00b5b351a5b0f65a723", "description": "Other protocol vulnerabilities", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "135", "address": "0x26888ff41d05ed753ea6443b02ada82031d3b9fb", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "67", "address": "0xa386f30853a7eb7e6a25ec8389337a5c6973421d", "description": "Camouflage a token contract", "YES_count": 8, "NO_count": 32, "percent_success_rate": 20.0}
+{"id": "175", "address": "0x74bcb8b78996f49f46497be185174b2a89191fd6", "description": "Absence of code logic or sanity check", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "215", "address": "0x14e6d67f824c3a7b4329d3228807f8654294e4bd", "description": "Direct call to untrusted contract", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "82", "address": "0x8f52e0c41164169818c1fb04b263fdc7c1e56088", "description": "Unfair slippage protection", "YES_count": 15, "NO_count": 25, "percent_success_rate": 37.5}
+{"id": "205", "address": "0xe4fe6a45f354e845f954cddee6084603cedb9410", "description": "Absence of code logic or sanity check", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "160", "address": "0x450a751d3338f8c8fd87325b971793aa292f1927", "description": "Authority control or breach of promise", "YES_count": 4, "NO_count": 36, "percent_success_rate": 10.0}
+{"id": "121", "address": "0x374abb8ce19a73f2c4efad642bda76c797f19233", "description": "Other coding mistakes", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "191", "address": "0x33bf0bb8e1405dc440eccb97ffd92fef438c8a27", "description": "Arithmetic mistakes", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "192", "address": "0x876b9ebd725d1fa0b879fcee12560a6453b51dc8", "description": "Function visibility error", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "122", "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b", "description": "Governance attack", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "197", "address": "0x0e6ffd4daeca13a8158146516f847d2f44ad4a30", "description": "Improper asset locks or frozen asset", "YES_count": 23, "NO_count": 17, "percent_success_rate": 57.49999999999999}
+{"id": "87", "address": "0x37ee638d85e420532e35cd9dd831166514855e6d", "description": "On-chain oracle manipulation", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "104", "address": "0xe7f445b93eb9cdabfe76541cc43ff8de930a58e6", "description": "Absence of code logic or sanity check", "YES_count": 10, "NO_count": 30, "percent_success_rate": 25.0}
+{"id": "189", "address": "0x33bf0bb8e1405dc440eccb97ffd92fef438c8a27", "description": "Deployment mistake", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "158", "address": "0xcc25994f217e93b5df05785c99ca62d6b6dde13e", "description": "Authority control or breach of promise", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "44", "address": "0xe11fc0b43ab98eb91e9836129d1ee7c3bc95df50", "description": "Unfair slippage protection", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "30", "address": "0x25a5feb5ac6533fe3c4e8e8e2a55f9e1f1f8e5f0", "description": "Absence of code logic or sanity check", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "16", "address": "0x304c62b5b030176f8d328d3a01feab632fc929ba", "description": "Compromised private key / hacked wallet", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "218", "address": "0x9daec8d56cdcbde72abe65f4a5daf8cc0a5bf2f9", "description": "Other unsafe DeFi protocol dependency", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "72", "address": "0x00cc9375a6579b5375813ed8d41eafda6d519409", "description": "On-chain oracle manipulation", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "28", "address": "0xd7b729ef857aa773f47d37088a1181bb3fbf0099", "description": "Other protocol vulnerabilities", "YES_count": 38, "NO_count": 2, "percent_success_rate": 95.0}
+{"id": "55", "address": "0x17e8ca1b4798b97602895f63206afcd1fc90ca5f", "description": "Other unsafe DeFi protocol dependency", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "202", "address": "0xcb6afdc84e8949ddf49ab00b5b351a5b0f65a723", "description": "Absence of code logic or sanity check", "YES_count": 23, "NO_count": 17, "percent_success_rate": 57.49999999999999}
+{"id": "5", "address": "0x0eee3e3828a45f7601d5f54bf49bb01d1a9df5ea", "description": "Reentrancy", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "137", "address": "0xa08c4571b395f81fbd3755d44eaf9a25c9399a4a", "description": "Broken patch", "YES_count": 13, "NO_count": 27, "percent_success_rate": 32.5}
+{"id": "183", "address": "0x5bd628141c62a901e0a83e630ce5fafa95bbdee4", "description": "Absence of code logic or sanity check", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "219", "address": "0x9daec8d56cdcbde72abe65f4a5daf8cc0a5bf2f9", "description": "Other inconsistent, improper or unprotected access control", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "81", "address": "0x8f52e0c41164169818c1fb04b263fdc7c1e56088", "description": "On-chain oracle manipulation", "YES_count": 16, "NO_count": 24, "percent_success_rate": 40.0}
+{"id": "195", "address": "0x55dbb68f69337fcabe261f296b50b4723d333830", "description": "On-chain oracle manipulation", "YES_count": 19, "NO_count": 21, "percent_success_rate": 47.5}
+{"id": "23", "address": "0x88093840aad42d2621e1a452bf5d7076ff804d61", "description": "Token standard incompatibility", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "69", "address": "0xa386f30853a7eb7e6a25ec8389337a5c6973421d", "description": "Absence of code logic or sanity check", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "136", "address": "0xcaf0366af95e8a03e269e52ddb3dbb8a00295f91", "description": "Unfair liquidity providing", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "11", "address": "0x929cb86046e421abf7e1e02de7836742654d49d6", "description": "Delegatecall / call injection", "YES_count": 8, "NO_count": 32, "percent_success_rate": 20.0}
+{"id": "98", "address": "0xc9f27a50f82571c1c8423a42970613b8dbda14ef", "description": "Reentrancy", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "174", "address": "0x65bc5c6a2630a87c2b494f36148e338dd76c054f", "description": "On-chain oracle manipulation", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "99", "address": "0xc9f27a50f82571c1c8423a42970613b8dbda14ef", "description": "Delegatecall / call injection", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "171", "address": "0x748fb6bce7606cf439957f48e821d270fcd0190d", "description": "Authority control or breach of promise", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "10", "address": "0x27dd6e51bf715cfc0e2fe96af26fc9ded89e4be8", "description": "Absence of code logic or sanity check", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "41", "address": "0x6684977bbed67e101bb80fc07fccfba655c0a64f", "description": "Other unsafe DeFi protocol dependency", "YES_count": 14, "NO_count": 26, "percent_success_rate": 35.0}
+{"id": "164", "address": "0x87704c841cc0a4d8f4fc690b8e7679c7dd78fb90", "description": "Authority control or breach of promise", "YES_count": 2, "NO_count": 38, "percent_success_rate": 5.0}
+{"id": "1", "address": "0x3ec4a6cfe803ee84009ce6e1ecf419c9cb1e8af0", "description": "On-chain oracle manipulation", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "97", "address": "0xddd7df28b1fb668b77860b473af819b03db61101", "description": "On-chain oracle manipulation", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "161", "address": "0x775541df8bd9a39ae9b15556628e6abe21074dab", "description": "Authority control or breach of promise", "YES_count": 1, "NO_count": 39, "percent_success_rate": 2.5}
+{"id": "157", "address": "0xa41638f9eeeecbdf0cb5e5ddc959795fc096bdf6", "description": "Authority control or breach of promise", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "54", "address": "0x17e8ca1b4798b97602895f63206afcd1fc90ca5f", "description": "Deployment mistake", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "109", "address": "0xda209a647d4499298e2076e9f46a2a937e33fa75", "description": "Absence of code logic or sanity check", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "86", "address": "0x31b38ba067c8b9c63eca3fe14d724ffe10b6a2b2", "description": "Other auxiliary vulnerabilities", "YES_count": 28, "NO_count": 12, "percent_success_rate": 70.0}
+{"id": "60", "address": "0x99309d2e7265528dc7c3067004cc4a90d37b7cc3", "description": "Absence of code logic or sanity check", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "186", "address": "0x328d15f6b5eba1c30cde1a5f1f5a9e35b07f5424", "description": "Reentrancy", "YES_count": 7, "NO_count": 33, "percent_success_rate": 17.5}
+{"id": "118", "address": "0x8dfeb86c7c962577ded19ab2050ac78654fea9f7", "description": "Function visibility error", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "162", "address": "0x8cc238391ac1c576ce43072eddaf082dc4c00a19", "description": "Authority control or breach of promise", "YES_count": 1, "NO_count": 39, "percent_success_rate": 2.5}
+{"id": "149", "address": "0x2f7ac9436ba4b548f9582af91ca1ef02cd2f1f03", "description": "Absence of code logic or sanity check", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "190", "address": "0x33bf0bb8e1405dc440eccb97ffd92fef438c8a27", "description": "Camouflage a non-token contract", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "182", "address": "0x5bd628141c62a901e0a83e630ce5fafa95bbdee4", "description": "Unfair slippage protection", "YES_count": 1, "NO_count": 39, "percent_success_rate": 2.5}
+{"id": "114", "address": "0xd7cd60574929925cdfde8df121df6cbb6a3d87b2", "description": "Reentrancy", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "120", "address": "0x4fe4b0fa3d082cdd9f7f630d6ab271a23bcdb4c4", "description": "Backdoor / Honeypot", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "39", "address": "0x7ad8f9ab85107fcb60e7423930adf00141fc9b39", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "80", "address": "0x0efb384d843a191c02f5c4470d0f9ec0122a1c0b", "description": "Absence of code logic or sanity check", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "146", "address": "0x45f783cce6b7ff23b2ab2d70e416cdb7d6055f51", "description": "On-chain oracle manipulation", "YES_count": 3, "NO_count": 37, "percent_success_rate": 7.5}
+{"id": "27", "address": "0x3212b29e33587a00fb1c83346f5dbfa69a458923", "description": "Reentrancy", "YES_count": 25, "NO_count": 15, "percent_success_rate": 62.5}
+{"id": "181", "address": "0xdac17f958d2ee523a2206206994597c13d831ec7", "description": "Broken patch", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "148", "address": "0x250e76987d838a75310c34bf422ea9f1ac4cc906", "description": "Absence of code logic or sanity check", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "50", "address": "0xd8a04f5412223f513dc55f839574430f5ec15531", "description": "Unintentional DoS", "YES_count": 35, "NO_count": 5, "percent_success_rate": 87.5}
+{"id": "117", "address": "0x923cab01e6a4639664aa64b76396eec0ea7d3a5f", "description": "Function visibility error", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "3", "address": "0x9059f2f644402db18155b7917762823a58962397", "description": "Absence of code logic or sanity check", "YES_count": 6, "NO_count": 34, "percent_success_rate": 15.0}
+{"id": "123", "address": "0x1bba5c6cc38ef04066042237b4298dc23405304d", "description": "Absence of code logic or sanity check", "YES_count": 38, "NO_count": 2, "percent_success_rate": 95.0}
+{"id": "129", "address": "0x0e511aa1a137aad267dfe3a6bfca0b856c1a3682", "description": "Other unsafe DeFi protocol dependency", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "79", "address": "0x0efb384d843a191c02f5c4470d0f9ec0122a1c0b", "description": "Camouflage a token contract", "YES_count": 17, "NO_count": 23, "percent_success_rate": 42.5}
+{"id": "178", "address": "0x70873211cb64c1d4ec027ea63a399a7d07c4085b", "description": "Absence of code logic or sanity check", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "116", "address": "0x274b5b7868c848ac690dc9b4011e9e7e29133700", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "18", "address": "0xb89e9365cb5bacfcf4a4b0386dfad45c3b4d3258", "description": "Backdoor / Honeypot", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "168", "address": "0x8cc757bc682e718d2f0264c1fcd3269eccf8214e", "description": "Authority control or breach of promise", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "133", "address": "0x0b283b107f70d23250f882fbfe7216c38abbd7ca", "description": "Backdoor / Honeypot", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "88", "address": "0x77f973fcaf871459aa58cd81881ce453759281bc", "description": "Other unfair or unsafe DeFi protocol interaction", "YES_count": 7, "NO_count": 33, "percent_success_rate": 17.5}
+{"id": "76", "address": "0x67b66c99d3eb37fa76aa3ed1ff33e8e39f0b9c7a", "description": "Other unsafe DeFi protocol dependency", "YES_count": 10, "NO_count": 30, "percent_success_rate": 25.0}
+{"id": "40", "address": "0xc1788e08d07a12704473e3370026055c7a83ca62", "description": "Backdoor / Honeypot", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "210", "address": "0x75572098dc462f976127f59f8c97dfa291f81d8b", "description": "Function visibility error", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "19", "address": "0x39b1df026010b5aea781f90542ee19e900f2db15", "description": "Frontrunning", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "93", "address": "0xa32d22f654c02693df70ac265ffa8b5e348b050a", "description": "Backdoor / Honeypot", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "185", "address": "0x328d15f6b5eba1c30cde1a5f1f5a9e35b07f5424", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "9", "address": "0x818e6fecd516ecc3849daf6845e3ec868087b755", "description": "On-chain oracle manipulation", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "45", "address": "0x5085c49828b0b8e69bae99d96a8e0fcf0a033369", "description": "Other unsafe DeFi protocol dependency", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "170", "address": "0xf3d161c4bb9a67921730fb7a0faa696996b20e12", "description": "Authority control or breach of promise", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "74", "address": "0x27d4ca4bb855e435959295ec273fa16fe8caea14", "description": "On-chain oracle manipulation", "YES_count": 8, "NO_count": 32, "percent_success_rate": 20.0}
+{"id": "43", "address": "0x54f227fe27ac93d3e1c09b443f03e5e929ee5259", "description": "Token standard incompatibility", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "36", "address": "0x32e574b0400cdb93dc33a34a30986737186bde43", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "29", "address": "0xc145990e84155416144c532e31f89b840ca8c2ce", "description": "Absence of code logic or sanity check", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "56", "address": "0x41a2f9ab325577f92e8653853c12823b35fb35c4", "description": "On-chain oracle manipulation", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "46", "address": "0xe952bda8c06481506e4731c4f54ced2d4ab81659", "description": "Token standard incompatibility", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "194", "address": "0xacbdb82f07b2653137d3a08a22637121422ae747", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 16, "NO_count": 24, "percent_success_rate": 40.0}
+{"id": "12", "address": "0x929cb86046e421abf7e1e02de7836742654d49d6", "description": "Absence of code logic or sanity check", "YES_count": 3, "NO_count": 37, "percent_success_rate": 7.5}
+{"id": "150", "address": "0x8927f48b12814beda29844ed73b21232720b1d07", "description": "On-chain oracle manipulation", "YES_count": 16, "NO_count": 24, "percent_success_rate": 40.0}
+{"id": "26", "address": "0x3212b29e33587a00fb1c83346f5dbfa69a458923", "description": "Token standard incompatibility", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "156", "address": "0xe777b006905e0f7f626f3af8824d3ae870e5b02d", "description": "Authority control or breach of promise", "YES_count": 16, "NO_count": 24, "percent_success_rate": 40.0}
+{"id": "59", "address": "0x45f81ef5f2ae78f49851f7a62e4061ff54ff674b", "description": "Deployment mistake", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "66", "address": "0xf17ca0e0f24a5fa27944275fa0cedec24fbf8ee2", "description": "Other inconsistent, improper or unprotected access control", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "78", "address": "0xd5aac41d315c1d382dcf1c39d4ed9b37c224edf2", "description": "Other protocol vulnerabilities", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "147", "address": "0x951d51baefb72319d9fbe941e1615938d89abfe2", "description": "Absence of code logic or sanity check", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "125", "address": "0xacd43e627e64355f1861cec6d3a6688b31a6f952", "description": "Unfair liquidity providing", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "108", "address": "0x2ec2ddd12566b66f4da248b1ecdee8619b5c56cd", "description": "On-chain oracle manipulation", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "145", "address": "0xae465fd39b519602ee28f062037f7b9c41fdc8cf", "description": "On-chain oracle manipulation", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "85", "address": "0xd520a3b47e42a1063617a9b6273b206a07bdf834", "description": "On-chain oracle manipulation", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "33", "address": "0x8ae4dffbf44c1c6c4c18489914401ef830ee146d", "description": "Absence of code logic or sanity check", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "212", "address": "0x35c674c288577df3e9b5dafef945795b741c7810", "description": "Absence of code logic or sanity check", "YES_count": 38, "NO_count": 2, "percent_success_rate": 95.0}
+{"id": "38", "address": "0xfe670043c158adc057b5ef2f66e753847e1c3d1d", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 28, "NO_count": 12, "percent_success_rate": 70.0}
+{"id": "106", "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522", "description": "Unsafe call to phantom function", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "127", "address": "0xbdaddc6a1321ed458b53ab9e51dc0de8dba78d43", "description": "Reentrancy", "YES_count": 13, "NO_count": 27, "percent_success_rate": 32.5}
+{"id": "200", "address": "0x7ac55ac530f2c29659573bde0700c6758d69e677", "description": "Absence of code logic or sanity check", "YES_count": 14, "NO_count": 26, "percent_success_rate": 35.0}
+{"id": "6", "address": "0x2775b1c75658be0f640272ccb8c72ac986009e38", "description": "Absence of code logic or sanity check", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "130", "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522", "description": "Other coding mistakes", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "51", "address": "0x1027df21e422698d1b32de387de9423930fae5db", "description": "Other inconsistent, improper or unprotected access control", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "173", "address": "0x0624eb9691d99178d0d2bd76c72f1dbb4db05286", "description": "On-chain oracle manipulation", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "96", "address": "0xe7748fce1d1e2f2fd2dddb5074bd074745dda8ea", "description": "Absence of code logic or sanity check", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "95", "address": "0xb3e708a6d1221ed7c58b88622fdbee2c03e4db4d", "description": "Token standard incompatibility", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "7", "address": "0xde744d544a9d768e96c21b5f087fc54b776e9b25", "description": "Absence of code logic or sanity check", "YES_count": 0, "NO_count": 40, "percent_success_rate": 0.0}
+{"id": "91", "address": "0x6847259b2b3a4c17e7c43c54409810af48ba5210", "description": "Other unsafe DeFi protocol dependency", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "15", "address": "0x109ea28dbdea5e6ec126fbc8c33845dfe812a300", "description": "On-chain oracle manipulation", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "143", "address": "0x55dbb68f69337fcabe261f296b50b4723d333830", "description": "Absence of code logic or sanity check", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "198", "address": "0x7ac55ac530f2c29659573bde0700c6758d69e677", "description": "Camouflage a token contract", "YES_count": 14, "NO_count": 26, "percent_success_rate": 35.0}
+{"id": "217", "address": "0xd55f01b4b51b7f48912cd8ca3cdd8070a1a9dba5", "description": "On-chain oracle manipulation", "YES_count": 2, "NO_count": 38, "percent_success_rate": 5.0}
+{"id": "83", "address": "0x45f24baeef268bb6d63aee5129015d69702bcdfa", "description": "Arithmetic mistakes", "YES_count": 4, "NO_count": 36, "percent_success_rate": 10.0}
+{"id": "65", "address": "0x99b0ff1dab49b5a120e6ef0beb72a84961ee252d", "description": "Other inconsistent, improper or unprotected access control", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "77", "address": "0x67b66c99d3eb37fa76aa3ed1ff33e8e39f0b9c7a", "description": "Absence of code logic or sanity check", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "37", "address": "0xfb44d6ebd1c659ecdb199111f9dce55a8b4d5df1", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "167", "address": "0x54d66be22bc7d89458c0a64eabf7e3bf69e0a0d9", "description": "Authority control or breach of promise", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "34", "address": "0x62cd2e277de84521bdf7f0cc94c5e002b495590f", "description": "Absence of code logic or sanity check", "YES_count": 13, "NO_count": 27, "percent_success_rate": 32.5}
+{"id": "213", "address": "0x3157439c84260541003001129c42fb6aba57e758", "description": "Governance attack", "YES_count": 39, "NO_count": 1, "percent_success_rate": 97.5}
+{"id": "13", "address": "0xe1e1aa58983f6b8ee8e4ecd206cea6578f036c21", "description": "Camouflage a token contract", "YES_count": 6, "NO_count": 34, "percent_success_rate": 15.0}
+{"id": "179", "address": "0xef9cd7882c067686691b6ff49e650b43afbbcc6b", "description": "Compromised private key / hacked wallet", "YES_count": 14, "NO_count": 26, "percent_success_rate": 35.0}
+{"id": "64", "address": "0x833e440332caa07597a5116fbb6163f0e15f743d", "description": "On-chain oracle manipulation", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "176", "address": "0x1bba5c6cc38ef04066042237b4298dc23405304d", "description": "On-chain oracle manipulation", "YES_count": 20, "NO_count": 20, "percent_success_rate": 50.0}
+{"id": "119", "address": "0x5f58058c0ec971492166763c8c22632b583f667f", "description": "Function visibility error", "YES_count": 2, "NO_count": 38, "percent_success_rate": 5.0}
+{"id": "105", "address": "0xc45433188d25493893c6f8eb1f573190f77c1f94", "description": "Arithmetic mistakes", "YES_count": 24, "NO_count": 16, "percent_success_rate": 60.0}
+{"id": "100", "address": "0xc9f27a50f82571c1c8423a42970613b8dbda14ef", "description": "Function visibility error", "YES_count": 7, "NO_count": 33, "percent_success_rate": 17.5}
+{"id": "169", "address": "0x42653f548139de55104204fb3a828715f5bceab6", "description": "Authority control or breach of promise", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "151", "address": "0xa79fe386b88fbee6e492eeb76ec48517d1ec759a", "description": "On-chain oracle manipulation", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "53", "address": "0xa23179be88887804f319c047e88fdd4dd4867ef5", "description": "Direct call to untrusted contract", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "142", "address": "0x55dbb68f69337fcabe261f296b50b4723d333830", "description": "On-chain oracle manipulation", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "47", "address": "0xe952bda8c06481506e4731c4f54ced2d4ab81659", "description": "Reentrancy", "YES_count": 0, "NO_count": 40, "percent_success_rate": 0.0}
+{"id": "152", "address": "0x584d52789608a82fdb94cb836361208636a26a6d", "description": "Token standard incompatibility", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "92", "address": "0x6847259b2b3a4c17e7c43c54409810af48ba5210", "description": "Absence of code logic or sanity check", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "163", "address": "0x719efa3a9e9831e0909b70861d788b6fc22d1fc8", "description": "Authority control or breach of promise", "YES_count": 24, "NO_count": 16, "percent_success_rate": 60.0}
+{"id": "199", "address": "0x7ac55ac530f2c29659573bde0700c6758d69e677", "description": "Reentrancy", "YES_count": 4, "NO_count": 36, "percent_success_rate": 10.0}
+{"id": "31", "address": "0x2165b3800b17224de39303c240a41064179db0a6", "description": "Absence of code logic or sanity check", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "126", "address": "0xc145990e84155416144c532e31f89b840ca8c2ce", "description": "Absence of code logic or sanity check", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "209", "address": "0x2db6c82ce72c8d7d770ba1b5f5ed0b6e075066d6", "description": "Reentrancy", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "172", "address": "0x819eea71d3f93bb604816f1797d4828c90219b5d", "description": "On-chain oracle manipulation", "YES_count": 39, "NO_count": 1, "percent_success_rate": 97.5}
+{"id": "138", "address": "0xdd0c4a96a43b36d91f4fedf83489b954c287886a", "description": "Broken patch", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "184", "address": "0xc1e088fc1323b20bcbee9bd1b9fc9546db5624c5", "description": "Governance attack", "YES_count": 10, "NO_count": 30, "percent_success_rate": 25.0}
+{"id": "32", "address": "0x7b3b69eab43c1aa677df04b4b65f0d169fcdc6ca", "description": "Function visibility error", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "94", "address": "0x46ba8a59f4863bd20a066fd985b163235425b5f9", "description": "Token standard incompatibility", "YES_count": 17, "NO_count": 23, "percent_success_rate": 42.5}
+{"id": "207", "address": "0xd06527d5e56a3495252a528c4987003b712860ee", "description": "Reentrancy", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "52", "address": "0xa23179be88887804f319c047e88fdd4dd4867ef5", "description": "Insider trade or other activities", "YES_count": 35, "NO_count": 5, "percent_success_rate": 87.5}
+{"id": "107", "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522", "description": "Absence of code logic or sanity check", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "134", "address": "0x26888ff41d05ed753ea6443b02ada82031d3b9fb", "description": "Camouflage a token contract", "YES_count": 17, "NO_count": 23, "percent_success_rate": 42.5}
+{"id": "62", "address": "0x328d15f6b5eba1c30cde1a5f1f5a9e35b07f5424", "description": "Reentrancy", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "58", "address": "0x6b566554378477490ab040f6f757171c967d03ab", "description": "Deployment mistake", "YES_count": 21, "NO_count": 19, "percent_success_rate": 52.5}
+{"id": "144", "address": "0x4071ee5eb20ba7352dcf08cabc7da4fa1daa370c", "description": "Direct call to untrusted contract", "YES_count": 39, "NO_count": 1, "percent_success_rate": 97.5}
+{"id": "115", "address": "0xf1f8e3ff67e386165e05b2b795097e95aac899f0", "description": "Absence of code logic or sanity check", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "141", "address": "0x9b9bad4c6513e0ff3fb77c739359d59601c7caff", "description": "Broken patch", "YES_count": 3, "NO_count": 37, "percent_success_rate": 7.5}
+{"id": "211", "address": "0x35c674c288577df3e9b5dafef945795b741c7810", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "8", "address": "0x5a9fd7c39a6c488e715437d7b1f3c823d5596ed1", "description": "Absence of code logic or sanity check", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "128", "address": "0xd63b340f6e9cccf0c997c83c8d036fa53b113546", "description": "Absence of code logic or sanity check", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "188", "address": "0xfd55ebc7bbde603a048648c6eab8775c997c1001", "description": "Absence of code logic or sanity check", "YES_count": 12, "NO_count": 28, "percent_success_rate": 30.0}
+{"id": "159", "address": "0xd361a3cffe2dd66a5beb82f894839cd3e56611e1", "description": "Authority control or breach of promise", "YES_count": 11, "NO_count": 29, "percent_success_rate": 27.500000000000004}
+{"id": "70", "address": "0xd61372d1c3e0a0925467317425359fb2959fe186", "description": "Arithmetic mistakes", "YES_count": 8, "NO_count": 32, "percent_success_rate": 20.0}
+{"id": "68", "address": "0xa386f30853a7eb7e6a25ec8389337a5c6973421d", "description": "Reentrancy", "YES_count": 32, "NO_count": 8, "percent_success_rate": 80.0}
+{"id": "102", "address": "0x42a5ed456650a09dc10ebc6361a7480fdd61f27b", "description": "Absence of code logic or sanity check", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "131", "address": "0xd1c5966f9f5ee6881ff6b261bbeda45972b1b5f3", "description": "Other coding mistakes", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "17", "address": "0x304c62b5b030176f8d328d3a01feab632fc929ba", "description": "Absence of code logic or sanity check", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "153", "address": "0x4b3865ac3df36e4c7ea5efa4c28a8b369cfd5b92", "description": "Token standard incompatibility", "YES_count": 21, "NO_count": 19, "percent_success_rate": 52.5}
+{"id": "208", "address": "0x2db6c82ce72c8d7d770ba1b5f5ed0b6e075066d6", "description": "Token standard incompatibility", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "206", "address": "0xd06527d5e56a3495252a528c4987003b712860ee", "description": "Token standard incompatibility", "YES_count": 4, "NO_count": 36, "percent_success_rate": 10.0}
+{"id": "57", "address": "0x41a2f9ab325577f92e8653853c12823b35fb35c4", "description": "Unfair liquidity providing", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "90", "address": "0xcd5f8dcae34f889e3d9f93f0d281c2d920c46a3e", "description": "Backdoor / Honeypot", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "196", "address": "0x55dbb68f69337fcabe261f296b50b4723d333830", "description": "Absence of code logic or sanity check", "YES_count": 28, "NO_count": 12, "percent_success_rate": 70.0}
+{"id": "113", "address": "0xd7cd60574929925cdfde8df121df6cbb6a3d87b2", "description": "Camouflage a token contract", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "112", "address": "0x41b856701bb8c24cece2af10651bfafebb57cf49", "description": "Compromised private key / hacked wallet", "YES_count": 31, "NO_count": 9, "percent_success_rate": 77.5}
+{"id": "14", "address": "0xe1e1aa58983f6b8ee8e4ecd206cea6578f036c21", "description": "Reentrancy", "YES_count": 39, "NO_count": 1, "percent_success_rate": 97.5}
+{"id": "132", "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640", "description": "On-chain oracle manipulation", "YES_count": 28, "NO_count": 12, "percent_success_rate": 70.0}
+{"id": "166", "address": "0x71e11d7bb8ac93b104586f41ce0f6d97713bd696", "description": "Authority control or breach of promise", "YES_count": 24, "NO_count": 16, "percent_success_rate": 60.0}
+{"id": "63", "address": "0x06c24002f43e3af904eeec581734ea3a7dbf355e", "description": "Absence of code logic or sanity check", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "75", "address": "0x27d4ca4bb855e435959295ec273fa16fe8caea14", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 22, "NO_count": 18, "percent_success_rate": 55.00000000000001}
+{"id": "204", "address": "0xe4fe6a45f354e845f954cddee6084603cedb9410", "description": "Camouflage a token contract", "YES_count": 15, "NO_count": 25, "percent_success_rate": 37.5}
+{"id": "203", "address": "0x1cec0e358f882733c5ecc028d8a0c24baee02004", "description": "Reentrancy", "YES_count": 16, "NO_count": 24, "percent_success_rate": 40.0}
+{"id": "216", "address": "0xa800cda5f3416a6fb64ef93d84d6298a685d190d", "description": "Unfair liquidity providing", "YES_count": 26, "NO_count": 14, "percent_success_rate": 65.0}
+{"id": "20", "address": "0x39b1df026010b5aea781f90542ee19e900f2db15", "description": "On-chain oracle manipulation", "YES_count": 38, "NO_count": 2, "percent_success_rate": 95.0}
+{"id": "24", "address": "0x9b3be0cc5dd26fd0254088d03d8206792715588b", "description": "On-chain oracle manipulation", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "61", "address": "0x328d15f6b5eba1c30cde1a5f1f5a9e35b07f5424", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 0, "NO_count": 40, "percent_success_rate": 0.0}
+{"id": "140", "address": "0x04536fb62db86ccf3c7b9b9ddd6dc10fedc92148", "description": "Broken patch", "YES_count": 3, "NO_count": 37, "percent_success_rate": 7.5}
+{"id": "101", "address": "0x52e4339b4b9ff254738d6e971e83440f60dc029c", "description": "Backdoor / Honeypot", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "35", "address": "0x53773fe5ff4451c896127dd2c91b8de7ac51ba2c", "description": "Direct call to untrusted contract", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "89", "address": "0x77f973fcaf871459aa58cd81881ce453759281bc", "description": "Absence of code logic or sanity check", "YES_count": 34, "NO_count": 6, "percent_success_rate": 85.0}
+{"id": "139", "address": "0x0fbb9456e929f66853973ba12109d9569d2d4966", "description": "Broken patch", "YES_count": 30, "NO_count": 10, "percent_success_rate": 75.0}
+{"id": "154", "address": "0xb246bcd5baac8e342941d0f803d528b6668e42cd", "description": "Backdoor / Honeypot", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "180", "address": "0x606e9758a39d2d7fa7e70bc68e6e7d9b02948962", "description": "Absence of code logic or sanity check", "YES_count": 4, "NO_count": 36, "percent_success_rate": 10.0}
+{"id": "111", "address": "0x7a8ac384d3a9086afcc13eb58e90916f17affc89", "description": "Other inconsistent, improper or unprotected access control", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "22", "address": "0x8e9654f15ee934edab16350e933577e0f9566d27", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "73", "address": "0xe0b94a7bb45dd905c79bb1992c9879f40f1caed5", "description": "Arithmetic mistakes", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "49", "address": "0xd8a04f5412223f513dc55f839574430f5ec15531", "description": "Unintentional DoS", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "71", "address": "0x67db14e73c2dce786b5bbbfa4d010deab4bbfcf9", "description": "On-chain oracle manipulation", "YES_count": 36, "NO_count": 4, "percent_success_rate": 90.0}
+{"id": "165", "address": "0xefcb3057fe5e65b04a7ea0f8f02d41c541ec5b8f", "description": "Authority control or breach of promise", "YES_count": 28, "NO_count": 12, "percent_success_rate": 70.0}
+{"id": "48", "address": "0xe20096c1a803fbeaced072cb972f36dbfdf5ca82", "description": "Deployment mistake", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "84", "address": "0x8407dc57739bcda7aa53ca6f12f82f9d51c2f21e", "description": "Compromised private key / hacked wallet", "YES_count": 39, "NO_count": 1, "percent_success_rate": 97.5}
+{"id": "103", "address": "0x956c43998316b6a2f21f89a1539f73fb5b78c151", "description": "Deployment mistake", "YES_count": 35, "NO_count": 5, "percent_success_rate": 87.5}
+{"id": "2", "address": "0x9059f2f644402db18155b7917762823a58962397", "description": "Deployment mistake", "YES_count": 33, "NO_count": 7, "percent_success_rate": 82.5}
+{"id": "124", "address": "0xacd43e627e64355f1861cec6d3a6688b31a6f952", "description": "Liquidity borrow, purchase, mint, deposit", "YES_count": 20, "NO_count": 20, "percent_success_rate": 50.0}
+{"id": "193", "address": "0x2bbd66fc4898242bdbd2583bbe1d76e8b8f71445", "description": "Function visibility error", "YES_count": 29, "NO_count": 11, "percent_success_rate": 72.5}
+{"id": "177", "address": "0x66e7d7839333f502df355f5bd87aea24bac2ee63", "description": "Absence of code logic or sanity check", "YES_count": 27, "NO_count": 13, "percent_success_rate": 67.5}
+{"id": "42", "address": "0xaf93908f5f8d66b50e11d7de06f688dde373c0cc", "description": "Token standard incompatibility", "YES_count": 22, "NO_count": 18, "percent_success_rate": 55.00000000000001}
+{"id": "155", "address": "0x1ebd81b7e3cef80603f95154ff1eb3db9765ea20", "description": "Authority control or breach of promise", "YES_count": 3, "NO_count": 37, "percent_success_rate": 7.5}
+{"id": "4", "address": "0x0eee3e3828a45f7601d5f54bf49bb01d1a9df5ea", "description": "Token standard incompatibility", "YES_count": 24, "NO_count": 16, "percent_success_rate": 60.0}
+{"id": "110", "address": "0x7a8ac384d3a9086afcc13eb58e90916f17affc89", "description": "Absence of code logic or sanity check", "YES_count": 40, "NO_count": 0, "percent_success_rate": 100.0}
+{"id": "187", "address": "0xa2a22b46b8df38cd7c55e6bf32ea5a32637cf2b1", "description": "Absence of code logic or sanity check", "YES_count": 37, "NO_count": 3, "percent_success_rate": 92.5}
+{"id": "21", "address": "0x8e9654f15ee934edab16350e933577e0f9566d27", "description": "On-chain oracle manipulation", "YES_count": 15, "NO_count": 25, "percent_success_rate": 37.5}
